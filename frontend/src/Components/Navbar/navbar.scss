@@ -1,0 +1,787 @@
+:root{
+    --PrimaryColor:hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187, 85%, 43%);
+    --gradientColor:linear-gradient(to right , hsl(187, 85%,43%) , hsl(199, 100%, 33%));
+    --whiteColor:hsl(0, 0%, 100%);
+    --blackColor:hsl(201,33%, 16%);
+    --textColor:hsl(240, 4%,36%);
+    --whiteColorDeam:hsl(0, 0%, 93%);
+    --greyText:rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,240);
+    --cardBG:rgb(225,225,225);
+
+
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--whiteColorDeam);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+
+    .logo{
+        color: var(--blackColor);
+    }
+    @media screen and (max-width:768px) {
+        .navBar{
+            position: absolute;
+            background: var(--whiteColorDeam);
+            height: max-content;        
+            width: 80%;
+            border-radius: 1rem;
+            top: 6rem;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgb(2, 15, 29,0.904);
+            transition: .3s ease-in-out;
+
+            .navLists{
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                padding: .5rem 0; 
+
+                .navItem{
+                    padding: .5rem 0;
+
+                    .navLink{
+                        color: var(--textColor);
+                        font-size: .9rem;
+                        font-weight: 600;
+                        
+                    }
+                }
+
+                .btn{
+                    margin-top: 1rem;
+
+                    a{
+                        font-weight: 600;
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+
+            .closeNavbar{
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: var(--PrimaryColor);
+                &:hover{
+                    color: var(--SecondaryColor);
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width:769px){
+    .toggleNavbar, .closeNavbar{
+        display: none;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+        
+
+        .navBar{
+            .navLists{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                
+
+                .navItem{
+                    .navLink{
+                        color: var(--textColor);
+                        padding: 0 0.35rem;
+                        width: auto;
+                        
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                        margin-left: 10px;
+                       
+
+                        &:hover{
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn{
+                    margin-left: 1rem;
+                    a{
+                        color: var(--whiteColor);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (min-width:960px) {
+    .header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0 0.7rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media  screen and (min-width:1240px) {
+    .header{
+       padding: 1rem 8.5rem;
+    }
+    
+}
+
+//this is above main part 
+
+.navBar {
+    position: absolute;
+    background: var(--whiteColorDeam);
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -200%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &.activeNavbar {
+        top: 7rem;
+        opacity: 1;
+        visibility: visible;
+
+        li{
+            
+
+            &:hover{
+                background-color: rgba(2, 15, 29, 0.9);
+                font-family: 'Times New Roman', Times, serif;
+                width: 350px;
+                height: auto;
+                border-radius: 1rem;
+                text-align: center;
+                transform: scale(1.05);
+
+            }
+        }
+
+    }
+
+    .navLists {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+
+        .navItem {
+            padding: 0.5rem 0;
+
+            .navLink {
+                color: var(--textColor);
+                font-size: 0.9rem;
+                font-weight: 600;
+                &:hover {
+                    color: var(--PrimaryColor);
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 1rem;
+            a {
+                font-weight: 600;
+                color: var(--whiteColor);
+            }
+        }
+    }
+
+    .closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);
+        cursor: pointer;
+        &:hover {
+            color: var(--SecondaryColor);
+        }
+    }
+}
+
+.toggleNavbar {
+    .icon {
+        font-size: 25px;
+        color: var(--PrimaryColor);
+    }
+    &:hover .icon {
+        color: var(--SecondaryColor);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar,
+    .closeNavbar {
+        display: none;
+    }
+
+    .navBar {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: transparent;
+        box-shadow: none;
+        width: auto;
+
+        .navLists {
+            flex-direction: row;
+
+            .navItem {
+                .navLink {
+                    padding: 0 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+.logoDiv{
+   margin-right: 300px;
+}
+
+
+//above is main and final main 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 240);
+    --cardBG: rgb(225, 225, 225);
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--whiteColorDeam);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+
+    .logoDiv {
+        flex: 1;
+
+        .logo {
+            color: var(--blackColor);
+        }
+    }
+
+    .actionButtons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .travelButton {
+            padding: 0.5rem 1rem;
+            background-color: var(--PrimaryColor);
+            color: var(--whiteColor);
+            font-weight: bold;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: var(--SecondaryColor);
+            }
+        }
+
+        .toggleNavbar {
+            .icon {
+                font-size: 25px;
+                color: var(--PrimaryColor);
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+    }
+
+    //354-474
+    @media screen and (max-width: 768px) {
+        .logoDiv {
+            margin-right: 0;
+        }
+
+        .navBar {
+            position: absolute;
+            background: var(--whiteColorDeam);
+            height: max-content;
+            width: 80%;
+            border-radius: 1rem;
+            top: 6rem;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+
+            &.activeNavbar {
+                opacity: 1;
+                visibility: visible;
+
+                li {
+                    &:hover {
+                        background-color: rgba(2, 15, 29, 0.9);
+                        border-radius: 1rem;
+                        text-align: center;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .navLists {
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem 0; 
+
+                .navItem {
+                    padding: 0.5rem 0rem;
+                   
+
+                    .navLink {
+                        color: var(--textColor);
+                        font-size: 0.9rem;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn {
+                    margin-top: 1rem;
+
+                    a {
+                        font-weight: 600;
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+
+            .closeNavbar {
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: var(--PrimaryColor);
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .toggleNavbar,
+        .closeNavbar {
+            display: none;
+        }
+
+        .navBar {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            background: transparent;
+            box-shadow: none;
+            width: auto;
+
+            .navLists {
+                flex-direction: row;
+
+                .navItem {
+                    .navLink {
+                        padding: 0 0.1rem;
+                        &:hover {
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .navBar {
+            .navLists {
+                .navItem {
+                    padding: 0 0.7rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1240px) {
+        padding: 1rem 8.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//today new content styling 13-12-24
+
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 240);
+    --cardBG: rgb(225, 225, 225);
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--whiteColorDeam);
+    width: 100%;
+    padding: 1rem 2rem;
+    z-index: 1000;
+
+    .logoDiv {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .logo {
+            color: var(--blackColor);
+            font-size: 1rem;   //1rem
+            font-weight: bold;  //bold
+        }
+
+        .logoText {
+            color: var(--PrimaryColor);
+            font-size: 1.2rem;  //1.2rem
+            font-weight: 600;  //600
+        }
+    }
+
+    .actionButtons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .travelButton {
+            padding: 0.5rem 1rem;
+            background-color: var(--PrimaryColor);
+            color: var(--whiteColor);
+            font-weight: bold;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: var(--SecondaryColor);
+            }
+        }
+
+        .toggleNavbar {
+            display: none;
+
+            .icon {
+                font-size: 25px;
+                color: var(--PrimaryColor);
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+    }
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    .navLists {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .navItem {
+            .navLink {
+                color: var(--textColor);
+                font-size: 0.9rem;
+                font-weight: 600;
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--PrimaryColor);
+                }
+            }
+        }
+    }
+
+    .btn {
+        background-color: var(--PrimaryColor);
+        color: var(--whiteColor);
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+
+        &:hover {
+            background-color: var(--SecondaryColor);
+        }
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .actionButtons {
+        .travelButton {
+            display: none;
+        }
+
+        .toggleNavbar {
+            display: block;
+        }
+    }
+
+    .navBar {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background: var(--whiteColorDeam);
+        width: 80%;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+
+        &.activeNavbar {
+            display: flex;
+        }
+
+        .navLists {
+            flex-direction: column;
+            gap: 1rem;
+
+            .navItem {
+                text-align: center;
+
+                .navLink {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:960px) {
+    .header {
+        
+        padding: 2px 15px;
+        height: 87px;
+
+
+        .logoDiv {
+            gap: 5px;
+            height: 10px;
+            width: max-content;
+           
+        }
+
+        .navBar .navLists .navItem .navLink {
+            padding: 2px 2px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .header {
+        padding: 1px 20px;
+        height: 87px;
+        display: flex;
+        align-items: center; // Center vertically within the header
+
+        .logoDiv {
+            display: flex; // Ensures icon and text are inline
+            align-items: center; // Aligns icon and text vertically
+            gap: 8px; // Adds space between the icon and text
+            height: auto;
+            width: max-content;
+
+            .logo {
+                display: flex; // Keeps the icon and text inline
+                align-items: center;
+
+                h1 {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.5rem; // Adjust size as needed
+                    color: var(--blackColor);
+
+                    .icon {
+                        font-size: 2.5rem; // Adjust icon size to match text
+                        margin-right: 2px; // Fine-tune spacing if necessary
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .navBar .navLists .navItem .navLink {
+            padding: 1px 1px;
+        }
+
+
+        .btn{
+            height: 35px;
+            width: max-content;
+            padding: 5px 10px; // Adjust padding for a balanced look
+            font-size: 15px; // Adjust font size for readability
+            background-color: var(--primaryColor); // Primary button color
+            color: var(--whiteColor); // Text color
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 7px; // Smooth corners
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: var(--SecondaryColor); // Change color on hover
+                transform: scale(1.1); // Slightly enlarge the button
+                
+            }
+
+            &:active {
+                transform: scale(1); // Reset size on click
+            }
+        }
+    }
+}
+
+//13-12-2024 
+
+@media screen and (min-width:768) and (max-width:920) {
+
+  
+    
+}
+
+/* User Circle */
+.userCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f4b400; /* Use your preferred color */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Dropdown Menu */
+  .dropdownMenu {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .dropdownItem {
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f4f4f4;
+  }
+  

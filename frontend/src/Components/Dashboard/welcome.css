@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    background-color: #f5f6ff;
+    
+
+}
+
+.containers{
+    padding: 10px;
+    max-width: 550px;
+    margin: 50px auto;
+    height:650px;
+   
+}
+
+.btns{
+    border: none;
+    padding:7px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.btns-add{
+  background: #194064;
+  color: white;
+  cursor: pointer;
+}
+
+.addContainer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.addContainer form{
+    width: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px 40px; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.addContainer form label{
+    font-size: 18px;
+}
+
+.addContainer form input{
+    font-size: 18px;
+    padding: 5px; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#btnss{
+    cursor: pointer;
+}
+
+.addContainer form .close-btn{
+    margin-left: auto;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.tableContainer{
+    margin-top: 50px;
+}
+
+.tableContainer table thead tr{
+    background-color: #a58e8e;
+}
+
+.tableContainer table thead tr th,
+.tableContainer table tbody tr td{
+    min-width: 200px;
+   padding: 7px;
+   text-align: center;
+   border-radius: 5px;
+   left: 0;
+}
+
+.tableContainer table tbody tr td{
+    background-color: rgb(8, 220, 236);
+    color: white;
+    border-bottom: 1px solid rgb(102, 102, 98);
+}
+
+.container{
+    padding: 10px;
+    max-width: fit-content;
+    margin: 50px auto;
+}
+
+.btn-edit,.btn-delete{
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit{
+    background-color: #e2f413;
+    margin-right: 7px;
+}
+
+.btn-delete{
+  margin-left: 7px;
+  background-color: #fa1717;
+}
+
+ #edit{
+    background-color: rgba(172, 255, 47, 0.694);
+}
+#delete{
+    background-color: #fa1717;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f6ff;
+  }
+  
+  .containers {
+    padding: 10px;
+    max-width: 550px;
+    margin: 50px auto;
+    height: 650px;
+  }
+  
+  .btns {
+    border: none;
+    padding: 7px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btns-add {
+    background: #194064;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .addContainer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .addContainer form {
+    width: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .addContainer form label {
+    font-size: 18px;
+  }
+  
+  .addContainer form input {
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #btnss {
+    cursor: pointer;
+  }
+  
+  .addContainer form .close-btn {
+    margin-left: auto;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #edit {
+    background-color: rgb(40, 110, 165);
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #delete {
+    background-color: rgb(160, 47, 47);
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #delete:hover {
+    background-color: #d42d2d;
+  }
+  
+  #edit:hover {
+    background-color: rgb(24, 85, 127);
+  }
+  
+  form input[type="file"] {
+    display: none;
+  }
+  
+  .file-upload {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #4b8e9d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .file-upload:hover {
+    background-color: #2d5c7c;
+  }
+  
+  .tableContainer {
+    margin-top: 30px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  thead {
+    background-color: #4b8e9d;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+
+  

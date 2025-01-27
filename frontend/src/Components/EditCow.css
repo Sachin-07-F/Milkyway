@@ -1,0 +1,151 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.edit-book-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px dashed green;
+  border-radius: 8px;
+  
+  /* overflow: hidden; */
+  /* padding: 20px; */
+ } 
+
+.edit-book-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+ 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+.update-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: rgba(4, 158, 241, 0.269);
+  margin: 0;
+  padding: 0;
+}
+
+.edit-book-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* overflow: hidden;
+  padding: 20px; */
+}
+
+.edit-book-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500; 
+  color: #30303093; 
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px; /* Slightly increased padding for better look */
+  font-size: 14px;
+  border: 1.7px solid #c2c2c2; /* Thicker border for inputs */
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* Highlight border color on focus */
+}
+
+.update-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}

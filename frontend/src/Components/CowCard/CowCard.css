@@ -1,0 +1,59 @@
+.cow-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .cow-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .cow-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .cow-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .cow-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .cow-card button {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .cow-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cow-card button:last-child {
+    background-color: #e53935;
+  }
+  
+  .cow-card button:last-child:hover {
+    background-color: #b71c1c;
+  }
+  

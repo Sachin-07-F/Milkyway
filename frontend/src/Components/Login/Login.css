@@ -1,0 +1,141 @@
+/* .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .login-container input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .login-container button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-container p {
+    margin-top: 10px;
+    color: red;
+  } */
+
+  #myforms{
+    height:340px;
+    width: 400px;
+  }
+
+
+  #main-divs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 217, 255, 0.952);
+  }
+
+  #myh2-s{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    position: absolute;
+    margin-left: 50px; 
+    font-size: 40px;
+    color: white;
+    font-weight:600;
+    background-image: url('https://th.bing.com/th/id/OIP.EuHn2mNdaGr-QNb6HGt2DAHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text; /* Required for WebKit browsers */
+    color: transparent; /* Make text transparent to show the image */
+    padding: 0.5rem 1rem; /* Adds space around the text */
+  
+    display: inline-block; /* Ensures the width wraps around the content */
+    text-shadow: 2px 2px 10px rgba(251, 251, 0, 0.128);
+  }
+
+  #emails,#passwords{
+    margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 350px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(236, 236, 244);
+  }
+
+
+
+
+
+  #emails:focus, #passwords:focus {
+    border-color: #01c4ff88; /* Change border color when focused (e.g., green) */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Green glow around the input */
+    outline: none; /* Removes default blue outline on focus */
+  }
+
+
+  #email-label,#password-label{
+    font-weight: 500;
+  }
+
+
+
+
+/* 
+
+
+  #sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    background-color: rgba(0, 217, 255, 0.952);
+  }
+  
+  #myform {
+    height: 490px;
+    width: 420px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #myform h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #email-id, #password-id {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 350px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(236, 236, 244);
+  }
+  
+  button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 0;
+  }
+  
+  p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  } */
+  

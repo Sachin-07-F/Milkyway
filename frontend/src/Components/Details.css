@@ -1,0 +1,70 @@
+.details-container {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .details-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chart-container canvas {
+    width: 75% !important;
+    height: 60% !important;
+  }
+  
+  .insights-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .insights-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4caf50;
+  }
+  
+  .no-data-container {
+    margin-top: 20px;
+  }
+  
+  .add-data-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-data-button:hover {
+    background-color: #45a049;
+  }
+  
+  .error {
+    color: red;
+    font-size: 1.2rem;
+  }
+  
+  .loading {
+    font-size: 1.5rem;
+    color: #4caf50;
+  }
+  
+
+  
