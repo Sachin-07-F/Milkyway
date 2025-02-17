@@ -57,7 +57,6 @@
 
 
 
-
 import express from "express";
 import dotenv from "dotenv";
 dotenv.config(); // Load environment variables
@@ -86,17 +85,15 @@ DbCon();
 // CORS configuration: Allow both local and deployed frontend
 const allowedOrigins = [
   'http://localhost:3000', // Your local frontend URL
-  'https://milkyway-7qer-b975wyp15-sachinfulari529-gmailcoms-projects.vercel.app/' // Your deployed frontend URL (replace with actual URL)
+  'https://milkyway-7qer-b975wyp15-sachinfulari529-gmailcoms-projects.vercel.app/' // Your deployed frontend URL
 ];
 
 app.use(cors({
   origin: function(origin, callback) {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-      // Allow the request (either from allowed origin or no origin if it's a direct request)
-      callback(null, true);
+      callback(null, true); // Allow the request (either from allowed origin or no origin)
     } else {
-      // Reject the request
-      callback(new Error('Not allowed by CORS'));
+      callback(new Error('Not allowed by CORS')); // Reject the request
     }
   },
   credentials: true,  // Allow sending credentials (cookies, HTTP authentication)
