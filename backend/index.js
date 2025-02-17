@@ -88,12 +88,15 @@ const allowedOrigins = [
   'https://milkyway-7qer-b975wyp15-sachinfulari529-gmailcoms-projects.vercel.app/' // Your deployed frontend URL
 ];
 
+
 app.use(cors({
   origin: function(origin, callback) {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-      callback(null, true); // Allow the request (either from allowed origin or no origin)
+      // Allow the request (either from allowed origin or no origin if it's a direct request)
+      callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS')); // Reject the request
+      // Reject the request
+      callback(new Error('Not allowed by CORS'));
     }
   },
   credentials: true,  // Allow sending credentials (cookies, HTTP authentication)
