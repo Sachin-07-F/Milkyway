@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # node_modules/
 .cache/
 # dist/
+=======
+#node_modules/
+.cache/
+ #dist/
+>>>>>>> b929bc182ab2a388b7bc263af940fc5ae4fb19f9
 *.log
