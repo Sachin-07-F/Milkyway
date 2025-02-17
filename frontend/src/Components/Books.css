@@ -527,6 +527,7 @@ display: inline;
     width: 100%;
     max-width: 1200px;
     margin: 10px;
+    border: 1.2px solid rgba(0, 0, 255, 0.211);
 }
 
 .book-card:hover {

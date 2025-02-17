@@ -35,6 +35,8 @@ import OTPForm from "./Components/OTPForm.jsx";
 import Details from "./Components/Details.jsx";
 import AddData from "./Components/AddData.jsx";
 import BookCards from "./Components/BookCards.jsx";
+import FAQ from "./Components/FAQ.jsx";
+import UserGuide from "./Components/UserGuide.jsx";
 
 
 // const App = () => {
@@ -644,6 +646,7 @@ const App = () => {
 
 
     <Router>
+      <FAQ />
   <ToastContainer />
   {/* <Toaster progress={true} /> */}
 
@@ -712,6 +715,7 @@ const App = () => {
       }
     />
     <Route path="/some" element={<Some />} />
+    <Route path="/user-guide" element={<><Navbar/><UserGuide /> </>}/>
     <Route
       path="/signup"
       element={

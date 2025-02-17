@@ -204,10 +204,11 @@ const Details = () => {
             height: "300px",
             width: "100%",
             marginBottom: "20px",
-            border: "1px solid #ddd",
+            border: "1px solid rgba(0, 0, 255, 0.27)",
             borderRadius: "10px",
             padding: "10px",
             boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+            backgroundColor:'rgba(11, 193, 206, 0.2)'
           }}
         >
           <Line data={chartData} options={{ responsive: true, maintainAspectRatio: false }} />
@@ -217,11 +218,11 @@ const Details = () => {
             margin: "0 auto",
             width: "60%",
             marginBottom: "20px",
-            border: "1px solid #ddd",
+            border: "1px solid rgba(0, 0, 255, 0.27)",
             borderRadius: "20px",
             padding: "20px",
             boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
-            backgroundColor: "#ddd",
+            backgroundColor: "skyblue",
           }}
         >
           <h4>Highest vs. Lowest Production</h4>

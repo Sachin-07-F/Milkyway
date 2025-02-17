@@ -39,7 +39,7 @@ const About = () => {
 
         <div className="about-values">
           <h2>Why Choose MilkTrack?</h2>
-          <p>
+          <p id='about-para'>
             At MilkTrack, we believe in innovation and simplicity. Our platform is designed to make milk production tracking effortless, allowing you to focus on what truly matters — your farm and livestock. Here’s why farmers trust us:
           </p>
           <ul>

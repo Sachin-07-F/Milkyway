@@ -68,7 +68,7 @@ const Main = () => {
       ) : (
         <div>
           <br/><br/><br/><br/><br/>
-          {showButton && (<button style={{padding:'5px',marginLeft:'1100px',borderRadius:'5px',border:'none',height:'35px',width:'95px',backgroundColor:'#4CAF50',color:'white',cursor:'pointer'}} onClick={addBook}>Add Book</button>)}
+          {showButton && (<button style={{padding:'5px',marginLeft:'1100px',borderRadius:'5px',border:'none',height:'35px',width:'95px',backgroundColor:'#4CAF50',color:'white',cursor:'pointer'}} onClick={addBook}>Add Cow</button>)}
           <Books email={userEmail} />
         </div>
       )}

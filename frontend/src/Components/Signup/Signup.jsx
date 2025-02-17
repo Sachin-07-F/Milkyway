@@ -33,7 +33,7 @@ export default function Signup() {
       });
 
       if (data.success) {
-        toast.success(data.message || "Registration successful! Welcome email sent.", {
+        toast.success(data.message || "Registration successful! Welcome to MilkTrack.", {
           position: "top-center",
           autoClose: 3000,
         });
