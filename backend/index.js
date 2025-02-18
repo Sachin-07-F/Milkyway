@@ -160,7 +160,7 @@ DbCon();
 // CORS configuration: Allow both local and deployed frontend
 const allowedOrigins = [
   "http://localhost:3000", // Local frontend
-  "https://milkyway-7ukz.vercel.app" // Deployed frontend (fixed URL)
+  "https://milkyway-tgek.vercel.app" // Deployed frontend (fixed URL)
 ];
 
 app.use(cors({
